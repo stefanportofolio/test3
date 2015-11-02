@@ -1,0 +1,12 @@
+Process
+
+-Create a free Github account for this code
+-Commit your code every 10 minutes as you do the task so we can see progress
+-Spend a maximum of 3 hours
+
+Task
+- responsive: 4 columns for desktop, 2 columns for tablet and 1 column for mobilephone.
+- slider can be navigated next and previous
+- main slider full height and full width
+- down arrow to scroll down automatically.
+- other icons please use http://fortawesome.github.io/Font-Awesome/icons/
