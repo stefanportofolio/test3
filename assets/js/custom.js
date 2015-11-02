@@ -9,6 +9,7 @@ $(document).ready(function(){
 
 
 	$('.arrow .right').click(function(){
+		clearInterval(carousel_interval);
 		$('.arrow').css('opacity',0);
 
 		var image_now = $('.carousel .shown');
@@ -25,6 +26,10 @@ $(document).ready(function(){
 				next_image.removeClass('hidden').addClass('shown');
 				$('.arrow').css('opacity',1);
 
+				carousel_interval = setInterval(function(){
+					$('.arrow .right').click()},10000);
+				
+
 			});
 		});
 
@@ -35,6 +40,7 @@ $(document).ready(function(){
 
 	});
 	$('.arrow .left').click(function(){
+		clearInterval(carousel_interval);
 		$('.arrow').css('opacity',0);
 		var image_now = $('.carousel .shown');
 		var next_image = image_now.next();
@@ -46,9 +52,12 @@ $(document).ready(function(){
 		
 		image_now.animate({opacity:"toggle"},500,function(){
 			next_image.animate({opacity:"toggle"},500,function(){
+				
 				image_now.removeClass('shown').addClass('hidden');
 				next_image.removeClass('hidden').addClass('shown');
 				$('.arrow').css('opacity',1);
+				carousel_interval = setInterval(function(){
+					$('.arrow .right').click()},10000);
 			});
 		});
 
@@ -58,7 +67,9 @@ $(document).ready(function(){
 
 
 	});
-	
+	var carousel_interval; 
+	carousel_interval = setInterval(function(){
+		$('.arrow .right').click()},10000);
 	$(window).resize(function(){
 		if($(window).width()<764){
 			$('nav').slideUp();
