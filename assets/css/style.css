@@ -68,6 +68,7 @@ nav ul .active{
 .carousel-items{
 	position: relative;
 }
+
 .carousel .explain{
 	position: absolute;
 	top: 50%;
@@ -84,6 +85,9 @@ nav ul .active{
 }
 .carousel .hidden{
 	display: none;
+}
+.carousel .shown{
+	display: block;
 }
 .down{
 	position: absolute;
@@ -157,6 +161,9 @@ footer .social{
 	float: right;
 	clear: both;
 }
+footer .social i{
+	margin-left: 10px;
+}
 
 @media(min-width: 764px){
 	.nav-button{
@@ -185,5 +192,12 @@ footer .social{
 @media(max-width: 609px){
 	.item{
 		width: 95%;
+	}
+	footer{
+		text-align: center;
+	}
+	footer .social, footer .copyright{
+		margin: 10px;
+		float: none;
 	}
 }
