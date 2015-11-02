@@ -1,9 +1,123 @@
-@media(min-width: 764px){
+body{
+	background: #f3f3f3;
+}
+header{
+	background: #000000;
+	width: 100%;
+}
+header img{
+	width: 100%;
+}
+.brand{
+	width: 30%;
+	margin-left: 5%;
+}
 
+nav{
+	
+	min-height: 25px;
+	background: #434446;
+}
+nav ul li{
+	color: #ffffff;
+	float: left;
+	margin-left: 20px;
+}
+nav ul li a{
+	color: #ffffff;
+	font-style: normal;
+}
+nav ul .active{
+	background: #2c3635;
+	border: 10px;
+}
+
+.marketing-word{
+	text-align: center;
+	color:#7c8c8b;
+}
+.marketing-word h1{
+	font-family: arial;
+	font-style: bold;
+}
+.list-container h4{
+	color: #5c6868;
+	font-style: bold;
+	font-family: arial;
+}
+.item{
+	position: relative;
+	overflow: hidden;
+	float: left;
+	background: #bbbbbb;
+	border-radius:10px;
+	margin-right: 5%;
+}
+.item .main-img{
+	width: 100%;
+}
+.new{
+	position: absolute;
+	z-index: 1;
+	left: 30%;
+}
+.description{
+	border-top:1px solid #f3f3f3 ;
+	border-bottom:1px solid #f3f3f3 ;
+}
+.description .sub-item{
+	float: left;
+	width: 25%;
+	color: #5c6868;
+}
+.price{
+	font-style: bold;
+	color: #fd8201;
+	
+}
+
+footer{
+	background: #434446;
+	width: 100%;
+	color: #ffffff;
+	clear: both;
+	min-height: 1.83cm;
+}
+footer .copyright{
+	float: left;
+	clear: both;
+}
+footer .social{
+	float: right;
+	clear: both;
+}
+
+@media(min-width: 764px){
+	.nav-button{
+		display: none;
+	}
+	.list-container{
+		width:78%;
+		margin-left: 10%;
+	}
+	.item{
+		width: 20%;
+	}
 }
 @media(max-width: 764px){
-	
+	nav{
+		display: none;
+	}
+	.item{
+		width: 45%;
+	}
+	nav ul li{
+		float: none;
+		margin-bottom: 5px;
+	}
 }
 @media(max-width: 609px){
-	
+	.item{
+		width: 95%;
+	}
 }
