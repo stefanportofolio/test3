@@ -145,7 +145,8 @@ button{
 	float: left;
 	background: #bbbbbb;
 	border-radius:10px;
-	margin-right: 5%;
+	margin-right: 3%;
+	width: initial;
 }
 .item:first-child{
 	background: #ffffff;
@@ -210,9 +211,16 @@ footer .social i{
 	nav{
 		display: none;
 	}
+	.list-container{
+		width:100%;
+	}
 	.item{
-		width: 45%;
+		width: 40%;
 		margin-bottom: 20px;
+	}
+
+	.item:nth-child(odd){
+		clear: both;
 	}
 	nav ul li{
 		float: none;
