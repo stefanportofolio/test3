@@ -25,13 +25,79 @@ nav ul li{
 }
 nav ul li a{
 	color: #ffffff;
-	font-style: normal;
+	font-style: bold;
+	text-decoration: none;
+	font-family: arial
 }
 nav ul .active{
 	background: #2c3635;
 	border: 10px;
 }
-
+.carousel{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.arrow .right{
+	float: right;
+	background: #fb9205;
+	border-radius:10px; 
+	width: 4%;
+}
+.arrow .right a{
+	color: #ffffff;
+}
+.arrow{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	font-size: 265%;
+}
+.arrow .left{
+	float: left;
+	background: #fb9205;
+	border-radius:10px; 
+	width: 4%;
+}
+.arrow .left a{
+	color: #ffffff;
+}
+.carousel img{
+	width: 100%;
+}
+.carousel-items{
+	position: relative;
+}
+.carousel .explain{
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	color: #ffffff;
+	font-size:130%;
+	font-family: arial;
+	font-style: bold;
+}
+.carousel .explain button{
+	border-radius: 5px;
+	background:#1eb5ca ;
+	color:#ffffff;
+}
+.carousel .hidden{
+	display: none;
+}
+.down{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top:85%;
+	font-size: 265%;
+	
+}
+.down a{
+	color: #ffffff;
+	background: #000000;
+	border-radius: 10px; 
+}
 .marketing-word{
 	text-align: center;
 	color:#7c8c8b;
@@ -59,7 +125,7 @@ nav ul .active{
 .new{
 	position: absolute;
 	z-index: 1;
-	left: 30%;
+	left: 100%;
 }
 .description{
 	border-top:1px solid #f3f3f3 ;
@@ -113,7 +179,7 @@ footer .social{
 	}
 	nav ul li{
 		float: none;
-		margin-bottom: 5px;
+		margin-bottom: 15px;
 	}
 }
 @media(max-width: 609px){
